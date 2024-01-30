@@ -117,18 +117,6 @@ def elf_log_regression(X_dist, y_dist, k, gamma, x0, d, lamb, method, num_client
 
         if np.mod(iteration,freq) == 0:
             all_iterates.append(x.copy())
-            # print(grad)
-
-
-        # Update progress bar
-        # progress_bar.update(1)
-        # remaining_time = progress_bar.format_dict['elapsed'] / (iteration + 1) * (k - iteration - 1)
-        # progress_bar.set_postfix(remaining_time=f"{remaining_time:.2f} s")
-
-        # Close the progress bar
-    # progress_bar.close()
-
-        # Return the average of the last iterates
     return all_iterates
 
 
